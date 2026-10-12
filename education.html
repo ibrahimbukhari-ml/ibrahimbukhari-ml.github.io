@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education · Ibrahim Bukhari</title>
+  <meta name="description" content="From a BSc in Islamabad to an Erasmus Mundus double master's degree in Language and Communication Technologies: UPV/EHU in Donostia and Université de Lorraine in Nancy.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Education · Ibrahim Bukhari">
+  <meta property="og:description" content="From a BSc in Islamabad to an Erasmus Mundus double master’s in Donostia and Nancy.">
+  <meta name="twitter:card" content="summary">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="story.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body class="rs">
+
+<a class="skip" href="#story">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__inner wrap">
+    <a href="index.html" class="nav__logo" aria-label="Home">IB<span>.</span></a>
+    <nav class="nav__links" id="site-nav" aria-label="Chapters">
+      <a href="phd.html">PhD Research</a>
+      <a href="experience.html">Research Labs</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="chip-btn icon nav__menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="chip-btn icon" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      </button>
+      <a class="btn btn--small" href="index.html">All chapters</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="rs-intro wrap">
+    <p class="eyebrow">Chapter 3 of 3 · Education</p>
+    <h1 class="rs-intro__title">From Islamabad<br><span class="grad">to the Basque Country.</span></h1>
+    <p class="rs-intro__lede">A computer science degree in Pakistan, then an Erasmus Mundus scholarship for two master's degrees in two countries. Scroll to follow the route.</p>
+    <p class="rs-intro__hint" aria-hidden="true">Scroll <span>↓</span></p>
+  </section>
+
+  <section class="story" id="story" aria-label="Education">
+    <div class="story__stage" aria-hidden="true">
+      <div class="stage__frame">
+        <canvas id="story-canvas"></canvas>
+        <div class="pin" id="pin-islamabad"><b>Islamabad</b><span>BSc · Riphah International University</span><span>2022</span></div>
+        <div class="pin" id="pin-donostia"><b>Donostia</b><span>Master's · UPV/EHU</span><span>2023 – 2024</span></div>
+        <div class="pin" id="pin-nancy"><b>Nancy</b><span>Master's · Université de Lorraine</span><span>2024 – 2025</span></div>
+        <div class="pin pin--small" id="pin-course"><b></b></div>
+        <div class="pin pin--small" id="pin-j-basque"><b>Basque Country</b><span>2023 · 2026</span></div>
+        <div class="pin pin--small" id="pin-j-nancy"><b>Nancy</b><span>2024</span></div>
+        <div class="pin pin--small" id="pin-j-paris"><b>Paris</b><span>2025</span></div>
+        <ol class="rail">
+          <li data-steps="0">2022<span>Islamabad</span></li>
+          <li data-steps="1">2023<span>Scholarship</span></li>
+          <li data-steps="2-3">2023<span>Donostia</span></li>
+          <li data-steps="4-5">2024<span>Nancy</span></li>
+          <li data-steps="6">2025<span>Next</span></li>
+        </ol>
+        <p class="stage__hint">Drag to rotate</p>
+      </div>
+    </div>
+
+    <div class="story__steps">
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">Islamabad · 2022</p>
+          <h2>BSc Computer Science, Riphah International University.</h2>
+          <p>Where it started: a computer science degree in Pakistan, finished with the best final-year project of my cohort.</p>
+          <dl class="step__meta">
+            <div><dt>Award</dt><dd>Zulfiqar Gold Medal for outstanding results</dd></div>
+            <div><dt>Grade</dt><dd>3.66 / 4.00</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">2023 · Erasmus Mundus</p>
+          <h2>A scholarship for two master's degrees.</h2>
+          <p>The European Commission awarded me an Erasmus Mundus scholarship for the Joint Master's in Language and Communication Technologies (LCT): two years at two European universities, ending with a master's degree from each.</p>
+          <p class="step__q"><b>The route:</b> Islamabad → Donostia → Nancy.</p>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">Donostia · 2023 – 2024</p>
+          <h2>Year 1: University of the Basque Country.</h2>
+          <p>The Master's in Language Analysis and Processing (HAP/LAP) at the Faculty of Informatics, the local master's programme of the HiTZ Center.</p>
+          <dl class="step__meta">
+            <div><dt>Degree</dt><dd>Master's in Language Analysis and Processing</dd></div>
+            <div><dt>Grade</dt><dd>8.84 / 10</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">Year 1 · Coursework</p>
+          <h2>The full HAP/LAP programme.</h2>
+          <p>I took every course of the local programme, from linguistics to deep learning. Point at a course to find it in the scene.</p>
+          <div class="courses">
+            <p class="courses__label"><span class="dot"></span>Term 1</p>
+            <ul class="course-list">
+              <li><button class="course" type="button" data-group="upv-t1">Programming Techniques for NLP</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Theoretical Linguistics</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Introduction to Machine Learning</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Machine Learning II</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Corpus Linguistics</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Computational Morphology</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Computational Syntax</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Speech Processing</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Building Language Resources</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Deep Learning</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">Statistics and Mathematics for NLP</button></li>
+              <li><button class="course" type="button" data-group="upv-t1">NLP Applications I: Understanding NLP</button></li>
+            </ul>
+            <p class="courses__label"><span class="dot dot--warm"></span>Term 2</p>
+            <ul class="course-list course-list--warm">
+              <li><button class="course" type="button" data-group="upv-t2">Computational Semantics and Pragmatics</button></li>
+              <li><button class="course" type="button" data-group="upv-t2">Reasoning</button></li>
+              <li><button class="course" type="button" data-group="upv-t2">Speech Technologies</button></li>
+              <li><button class="course" type="button" data-group="upv-t2" data-short="NLP Applications II">NLP Applications II: Information Extraction, Question Answering and Conversational Systems</button></li>
+              <li><button class="course" type="button" data-group="upv-t2">Machine Translation and Multilingualism</button></li>
+              <li><button class="course" type="button" data-group="upv-t2">Language Technologies for Digital Humanities</button></li>
+              <li><button class="course" type="button" data-group="upv-t2">Research Methods for NLP</button></li>
+            </ul>
+            <p class="courses__label"><span class="dot dot--warm"></span>Project · Apr – Jun 2024</p>
+            <ul class="course-list course-list--warm">
+              <li><button class="course" type="button" data-group="upv-proj" data-short="Multilingual biomedical RAG">Multilingual biomedical RAG</button></li>
+            </ul>
+            <p class="courses__note">An agentic RAG pipeline for cross-lingual medical question answering, evaluated on MedQuAD for retrieval and generation.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">Nancy · 2024 – 2025</p>
+          <h2>Year 2: Université de Lorraine.</h2>
+          <p>The second year (M2) of the Master's in Natural Language Processing, on the computer-science track.</p>
+          <dl class="step__meta">
+            <div><dt>Degree</dt><dd>Master's in NLP, ILPC track</dd></div>
+            <div><dt>Grade</dt><dd>15.47 / 20</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">Year 2 · Highlights</p>
+          <h2>From neural networks to LLMs.</h2>
+          <div class="courses">
+            <p class="courses__label"><span class="dot"></span>Courses</p>
+            <ul class="course-list">
+              <li><button class="course" type="button" data-group="lor">Large Language Models</button></li>
+              <li><button class="course" type="button" data-group="lor">Neural Networks</button></li>
+              <li><button class="course" type="button" data-group="lor">Computational Morphology</button></li>
+              <li><button class="course" type="button" data-group="lor">Speech Recognition</button></li>
+            </ul>
+            <p class="courses__label"><span class="dot dot--warm"></span>Project · Oct 2024 – Feb 2025</p>
+            <ul class="course-list course-list--warm">
+              <li><button class="course" type="button" data-group="lor-proj" data-short="Cross-lingual POS tagging">Cross-lingual POS tagging</button></li>
+            </ul>
+            <p class="courses__note">Zero-shot transfer from high-resource to low-resource languages with XLM-R and Glot500, and the effect of subword tokenization: up to 72% F1.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step__card">
+          <p class="step__num">Where it led</p>
+          <h2>Paris, then back to the Basque Country.</h2>
+          <p>The master's led to an AI research internship at OHVaiLLM in Paris in 2025, and then to a PhD at HiTZ in Bilbao from 2026.</p>
+          <div class="step__links">
+            <a class="btn btn--small" href="phd.html">PhD research</a>
+            <a class="btn btn--small btn--ghost" href="experience.html">Research Labs</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="rs-outro wrap">
+    <a class="next-chapter" href="phd.html">
+      <span class="next-chapter__eyebrow">Back to Chapter 1</span>
+      <span class="next-chapter__title">PhD Research</span>
+      <span class="next-chapter__text">The route ends in Bilbao, where it all comes together: teaching language models to see, follow and translate sign language.</span>
+      <span class="next-chapter__cta">Watch the research story <span aria-hidden="true">→</span></span>
+    </a>
+    <p class="next-chapter__aside"><a href="index.html">All chapters</a> · <a href="assets/Ibrahim_Bukhari_CV.pdf" download>Download CV</a> · <a href="index.html#contact">Contact</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year">2026</span> Ibrahim Bukhari · Bilbao, Basque Country</div>
+</footer>
+
+<script type="module" src="education.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

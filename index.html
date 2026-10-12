@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ibrahim Bukhari · Sign Language AI &amp; Vision-Language Models</title>
+  <meta name="description" content="PhD researcher at HiTZ (University of the Basque Country) teaching language models to see, follow and translate sign language. Previously post-training LLMs with synthetic data at OHVaiLLM and Vicomtech, after an Erasmus Mundus double master's.">
+  <meta name="author" content="Ibrahim Bukhari">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Ibrahim Bukhari · Sign Language AI &amp; Vision-Language Models">
+  <meta property="og:description" content="PhD researcher at HiTZ teaching language models to see, follow and translate sign language.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
+  <meta name="twitter:card" content="summary">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="story.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body class="rs home">
+
+<a class="skip" href="#chapters">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__inner wrap">
+    <a href="index.html" class="nav__logo" aria-label="Home" aria-current="page">IB<span>.</span></a>
+    <nav class="nav__links" id="site-nav" aria-label="Chapters">
+      <a href="phd.html">PhD Research</a>
+      <a href="experience.html">Research Labs</a>
+      <a href="education.html">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="chip-btn icon nav__menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="chip-btn icon" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      </button>
+      <a class="btn btn--small" href="assets/Ibrahim_Bukhari_CV.pdf" download>
+        CV
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="home-hero wrap">
+    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>PhD researcher · HiTZ Center, University of the Basque Country · Bilbao</p>
+    <h1 class="home-hero__title">Ibrahim<br><span class="grad">Bukhari</span></h1>
+    <p class="home-hero__lede"><strong>I teach language models to see, follow and translate sign language.</strong> Three chapters tell how I got here: the PhD I'm doing now, the research labs where I post-trained LLMs, and the double master's that brought me to the Basque Country.</p>
+
+    <nav class="chapter-index" aria-label="Chapters">
+      <a href="phd.html" data-chapter="0">
+        <span class="chapter-index__num">01</span>
+        <b>PhD Research</b>
+        <span>Vision-language models for sign language · 2026 – 2030</span>
+      </a>
+      <a href="experience.html" data-chapter="1">
+        <span class="chapter-index__num">02</span>
+        <b>Research Labs</b>
+        <span>LLM post-training at OHVaiLLM and Vicomtech · 2024 – 2025</span>
+      </a>
+      <a href="education.html" data-chapter="2">
+        <span class="chapter-index__num">03</span>
+        <b>Education</b>
+        <span>Erasmus Mundus double master's · 2023 – 2025</span>
+      </a>
+    </nav>
+
+    <div class="home-hero__actions">
+      <a class="btn" href="assets/Ibrahim_Bukhari_CV.pdf" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+        Download CV (PDF)
+      </a>
+      <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      <a class="text-link" href="https://github.com/ibrahimbukhari-ml" rel="me">GitHub</a>
+      <a class="text-link" href="https://www.linkedin.com/in/ibrahimbukhari-ml/" rel="me">LinkedIn</a>
+    </div>
+    <p class="rs-intro__hint" aria-hidden="true">Scroll for the map <span>↓</span></p>
+  </section>
+
+  <section class="story" id="chapters" aria-label="Chapters on the map">
+    <div class="story__stage" aria-hidden="true">
+      <div class="stage__frame">
+        <canvas id="story-canvas"></canvas>
+        <a class="pin pin--chapter" href="phd.html" tabindex="-1" data-pin="0"><small>01</small><b>PhD Research</b><span>Bilbao · 2026 – 2030</span></a>
+        <a class="pin pin--chapter" href="experience.html#ohvaillm" tabindex="-1" data-pin="1"><small>02</small><b>Research Labs</b><span>OHVaiLLM, Paris · 2025</span></a>
+        <a class="pin pin--chapter" href="experience.html#vicomtech" tabindex="-1" data-pin="1" data-secondary><small>02</small><b>Research Labs</b><span>Vicomtech, Donostia · 2024</span></a>
+        <a class="pin pin--chapter" href="education.html" tabindex="-1" data-pin="2"><small>03</small><b>Double Master's</b><span>Donostia · Nancy · 2023 – 2025</span></a>
+        <ol class="rail">
+          <li>01<span>PhD Research</span></li>
+          <li>02<span>Research Labs</span></li>
+          <li>03<span>Education</span></li>
+          <li>Contact</li>
+        </ol>
+        <p class="stage__hint">Click a label to open its chapter</p>
+      </div>
+    </div>
+
+    <div class="story__steps">
+      <article class="step" data-chapter="0">
+        <div class="step__card">
+          <p class="step__num">Chapter 1 · PhD Research</p>
+          <h2>Can a language model follow sign language over time?</h2>
+          <p>My PhD at HiTZ, University of the Basque Country (2026 – 2030), studies how video is encoded, how it reaches the language model, and whether a translation stays grounded in what was actually signed.</p>
+          <a class="btn btn--small step__cta" href="phd.html">Watch the research story <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="step" data-chapter="1">
+        <div class="step__card">
+          <p class="step__num">Chapter 2 · Research Labs</p>
+          <h2>Post-training LLMs with synthetic data.</h2>
+          <p>Two research internships built on one idea: generate the right data, check it, then teach the model with it.</p>
+          <dl class="stats">
+            <div><dt>−17 pts</dt><dd>hallucination · OHVaiLLM, Paris</dd></div>
+            <div><dt>+48 pts</dt><dd>citation accuracy · OHVaiLLM, Paris</dd></div>
+            <div><dt>+30 pts</dt><dd>entity F1 · Vicomtech, Donostia</dd></div>
+          </dl>
+          <a class="btn btn--small step__cta" href="experience.html">Fly to the labs <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="step" data-chapter="2">
+        <div class="step__card">
+          <p class="step__num">Chapter 3 · Education</p>
+          <h2>Two master's degrees, one scholarship.</h2>
+          <p>An Erasmus Mundus scholarship took me from Islamabad to the University of the Basque Country (2023 – 2024) and Université de Lorraine (2024 – 2025), with a master's degree from each.</p>
+          <a class="btn btn--small step__cta" href="education.html">Follow the route <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="step" id="contact">
+        <div class="step__card">
+          <p class="step__num">Contact</p>
+          <h2>Let's talk research.</h2>
+          <p>I welcome research collaborations, visiting research opportunities and technical discussions around sign language understanding and multimodal LLMs.</p>
+          <div class="step__links">
+            <a class="btn btn--small" href="mailto:ibrahimbukhari.ml@gmail.com">ibrahimbukhari.ml@gmail.com</a>
+            <a class="btn btn--small btn--ghost" href="https://github.com/ibrahimbukhari-ml" rel="me">GitHub</a>
+            <a class="btn btn--small btn--ghost" href="https://www.linkedin.com/in/ibrahimbukhari-ml/" rel="me">LinkedIn</a>
+            <a class="btn btn--small btn--ghost" href="assets/Ibrahim_Bukhari_CV.pdf" download>CV</a>
+          </div>
+          <p class="step__q"><b>Toolkit:</b> Python · PyTorch · Hugging Face · vLLM · Slurm and HPC · Docker · AWS</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year">2026</span> Ibrahim Bukhari · Bilbao, Basque Country</div>
+</footer>
+
+<script type="module" src="home.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

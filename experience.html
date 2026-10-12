@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Labs · Ibrahim Bukhari</title>
+  <meta name="description" content="Research lab experience post-training LLMs with synthetic data: sentence-level citation at OHVaiLLM (Paris) and intent and entity recognition at Vicomtech (Donostia).">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research Labs · Ibrahim Bukhari">
+  <meta property="og:description" content="Post-training LLMs with synthetic data at OHVaiLLM (Paris) and Vicomtech (Donostia).">
+  <meta name="twitter:card" content="summary">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="story.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body class="rs">
+
+<a class="skip" href="#story">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__inner wrap">
+    <a href="index.html" class="nav__logo" aria-label="Home">IB<span>.</span></a>
+    <nav class="nav__links" id="site-nav" aria-label="Chapters">
+      <a href="phd.html">PhD Research</a>
+      <a href="experience.html" aria-current="page">Research Labs</a>
+      <a href="education.html">Education</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="chip-btn icon nav__menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="chip-btn icon" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      </button>
+      <a class="btn btn--small" href="index.html">All chapters</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="rs-intro wrap">
+    <p class="eyebrow">Chapter 2 of 3 · Research Labs · 2024 – 2025</p>
+    <h1 class="rs-intro__title">Post-training LLMs<br><span class="grad">with synthetic data.</span></h1>
+    <p class="rs-intro__lede">Two internships built on the same idea: generate the right data, check it, then teach the model with it. Pick an experience and the map takes you there.</p>
+    <p class="rs-intro__hint" aria-hidden="true">Scroll <span>↓</span></p>
+  </section>
+
+  <section class="story story--tabs" id="story" aria-label="Experience">
+    <div class="story__stage" aria-hidden="true">
+      <div class="stage__frame">
+        <canvas id="story-canvas"></canvas>
+        <div class="pin" id="pin-paris">
+          <b>Paris</b>
+          <span>AI Research Intern · OHVaiLLM</span>
+          <span>Mar – Aug 2025</span>
+        </div>
+        <div class="pin" id="pin-donostia">
+          <b>Donostia</b>
+          <span>NLP Research Intern · Vicomtech</span>
+          <span>Jun – Aug 2024</span>
+        </div>
+        <ol class="rail"></ol>
+        <p class="stage__hint">Drag to rotate</p>
+      </div>
+    </div>
+
+    <div class="story__steps">
+      <div class="xp-tabs" role="tablist" aria-label="Experience">
+        <button class="xp-tab" type="button" role="tab" id="tab-ohvaillm" aria-controls="panel-ohvaillm" data-chapter="ohvaillm"><b>Paris</b><span>OHVaiLLM · 2025</span></button>
+        <button class="xp-tab" type="button" role="tab" id="tab-vicomtech" aria-controls="panel-vicomtech" data-chapter="vicomtech"><b>Donostia</b><span>Vicomtech · 2024</span></button>
+      </div>
+
+      <div class="xp-panel" role="tabpanel" id="panel-ohvaillm" aria-labelledby="tab-ohvaillm">
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">Paris · Mar – Aug 2025</p>
+            <h2>AI Research Intern at OHVaiLLM.</h2>
+            <p>Aligning financial LLMs for reliability and traceability in RAG: post-training them on synthetic data so they cite the exact sentence behind every claim, and hallucinate less. This work was also my MSc thesis.</p>
+            <p class="chips"><span>Python</span><span>Hugging Face</span><span>Transformers</span><span>vLLM</span><span>FAISS</span><span>Slurm</span></p>
+            <p class="step__cue">Scroll for the story <span aria-hidden="true">↓</span></p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">01 · Sources</p>
+            <h2>Financial answers need receipts.</h2>
+            <p>Financial reports are long, dense and full of numbers. An assistant answering questions about them should point to the exact sentence each claim comes from.</p>
+            <p class="step__q"><b>The problem:</b> answers that sound right but can't be traced back to the source.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">02 · Agents</p>
+            <h2>A pipeline of LLM agents.</h2>
+            <p>A multi-agent pipeline reads the source documents, writes question–answer pairs and checks them. Samples that fail a check are dropped before they reach the dataset.</p>
+            <p class="step__note">The agents shown are illustrative.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">03 · Dataset</p>
+            <h2>40,000+ samples, every claim cited.</h2>
+            <p>Every claim in every answer is linked to the exact source sentence that supports it. The threads are those citations, and producing them is what the model learns.</p>
+            <p class="step__q"><b>Also built:</b> FinBench-Cite, a benchmark for sentence-level citation.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">04 · Training</p>
+            <h2>Post-training at scale.</h2>
+            <p>LLMs were post-trained on the dataset to cite at sentence level in RAG, on multiple H100 GPUs of the Jean Zay supercomputer, orchestrated with Slurm.</p>
+            <p class="chips"><span>Hugging Face</span><span>vLLM</span><span>FAISS</span><span>Slurm</span></p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">05 · Results</p>
+            <h2>Fewer hallucinations, better citations.</h2>
+            <p>After post-training, hallucinations dropped by 17 points and citation accuracy rose by 48 points.</p>
+            <p class="step__q"><b>Reading the chart:</b> left bar, hallucination (down 17 points); right bar, citation accuracy (up 48 points). Drawn to scale.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="xp-panel" role="tabpanel" id="panel-vicomtech" aria-labelledby="tab-vicomtech">
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">Donostia · Jun – Aug 2024</p>
+            <h2>NLP Research Intern at Vicomtech.</h2>
+            <p>Synthetic data for few-shot intent and entity recognition in task-specific dialogue systems, where only a handful of labelled examples exist per intent.</p>
+            <p class="chips"><span>Python</span><span>DistilBERT</span><span>JointBERT</span><span>Transformers</span><span>TensorFlow</span></p>
+            <p class="step__cue">Scroll for the story <span aria-hidden="true">↓</span></p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">01 · Seeds</p>
+            <h2>A handful of examples.</h2>
+            <p>A task-specific dialogue system starts with very few labelled utterances per intent. Each one pairs an intent with its entities, highlighted here.</p>
+            <p class="step__q"><b>The problem:</b> recognising intents and entities with almost no training data.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">02 · Variants</p>
+            <h2>Same entities, new contexts.</h2>
+            <p>An LLM generates new utterances from each seed's intent–entity pair by substituting the context around the entity. The entity stays in place; the words around it change.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">03 · Filter</p>
+            <h2>Catching mislabeled samples.</h2>
+            <p>Some generated utterances no longer match their intent. A DistilBERT classifier trained on the seed data flags them, and the flagged ones are dropped before training.</p>
+            <p class="step__q"><b>Effect:</b> 40% less mislabeling, and 3 points more overall accuracy.</p>
+            <p class="step__note">Not every bad sample is caught: the outlined ones made it through.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">04 · Evaluation</p>
+            <h2>One model, two answers.</h2>
+            <p>The clean data goes into a JointBERT-based evaluation: one model predicts the intent and tags the entities in the same pass, measured by intent accuracy and entity-level F1.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step__card">
+            <p class="step__num">05 · Results</p>
+            <h2>Entity F1 up by 30 points.</h2>
+            <p>Training on the synthetic data improved entity F1 by 30 points, and filtering out mislabeled samples added 3 points of overall accuracy.</p>
+            <p class="step__q"><b>Reading the chart:</b> left bar, entity F1 (up 30 points); right bar, overall accuracy from filtering (up 3 points). Drawn to scale.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rs-outro wrap">
+    <a class="next-chapter" href="education.html">
+      <span class="next-chapter__eyebrow">Next · Chapter 3</span>
+      <span class="next-chapter__title">Education</span>
+      <span class="next-chapter__text">How I got here: from a computer science degree in Islamabad to an Erasmus Mundus double master's in Donostia and Nancy.</span>
+      <span class="next-chapter__cta">Follow the route <span aria-hidden="true">→</span></span>
+    </a>
+    <p class="next-chapter__aside"><a href="index.html">All chapters</a> · <a href="assets/Ibrahim_Bukhari_CV.pdf" download>Download CV</a> · <a href="index.html#contact">Contact</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year">2026</span> Ibrahim Bukhari · Bilbao, Basque Country</div>
+</footer>
+
+<script type="module" src="experience.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
